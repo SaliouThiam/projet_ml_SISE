@@ -1,0 +1,23 @@
+# Packages nécessaires à l'étape actuelle : extraction + notebook 01_exploration
+# Installation : pip install -r requirements.txt  (dans l'environnement conda actif)
+
+# Extraction des données (src/data/extraction.py)
+requests>=2.31
+
+# Manipulation et visualisation des données
+pandas>=2.1
+numpy>=1.26
+matplotlib>=3.8
+
+# Exécution des notebooks
+ipykernel>=6.29
+notebook>=7.0
+
+# --- À activer plus tard, quand on en aura besoin ---
+# scikit-learn     # modèles et pipelines (notebooks 03 à 05)
+# shap             # interprétation des modèles (notebook 06)
+# joblib           # sauvegarde des pipelines entraînés
+# dash             # application web
+# plotly           # graphiques interactifs de l'application
+# dash-bootstrap-components
+# gunicorn         # déploiement sur Render
