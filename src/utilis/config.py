@@ -1,7 +1,6 @@
 """
-config.py : paramètres centraux du projet m2_enedis.
 
-Ce fichier ne contient AUCUNE logique de traitement : uniquement des constantes
+Ce fichier contient uniquement des constantes
 partagées par l'extraction, le prétraitement, les modèles, l'application Dash et
 l'API. Si un choix change (périmètre, colonnes à télécharger...), on le modifie
 ici et nulle part ailleurs.
@@ -64,8 +63,6 @@ FILTRES_API = {
     "code_region_ban_eq": CODE_REGION,
 }
 
-# Mots qui révèlent un DPE  dans les adresses (ex. « Les Exemples »).
-MOTS_DPE_TEST = ("exemple")
 
 # ---------------------------------------------------------------------------
 # 4. Variables cibles
@@ -165,25 +162,25 @@ COLONNES_A_EXTRAIRE = _sans_doublon(
 #    par une mesure statistique (elles sont fortement corrélées à la cible
 #    justement parce qu'elles en dérivent).
 # ---------------------------------------------------------------------------
-PREFIXES_FUITE = (
-    "conso_",
-    "emission_ges_",
-    "cout_",
-    "besoin_",
-    "deperditions_",
-    "apport_",
-)
+# PREFIXES_FUITE = (
+#     "conso_",
+#    # "emission_ges_",
+#     "cout_",
+#     "besoin_",
+#    # "deperditions_",
+#     # "apport_",
+# )
 COLONNES_FUITE_EXACTES = {"etiquette_ges", "ubat_w_par_m2_k"}
 
 
 def est_colonne_fuite(nom_colonne: str) -> bool:
     """Vrai si la colonne dérive du calcul du DPE et ne doit pas servir de variable."""
-    return nom_colonne.startswith(PREFIXES_FUITE) or nom_colonne in COLONNES_FUITE_EXACTES
+    return  nom_colonne in COLONNES_FUITE_EXACTES
 
 
 # ---------------------------------------------------------------------------
 # 9. Seuils officiels du DPE (borne haute de chaque classe, bornes incluses)
-#    À VÉRIFIER sur la documentation officielle avant usage : la grille peut
+#   VÉRIFIER sur la documentation officielle avant usage : la grille peut
 #    avoir des ajustements (par exemple pour les très petites surfaces).
 # ---------------------------------------------------------------------------
 SEUILS_ENERGIE_PRIMAIRE = [  # kWhEP/m²/an
