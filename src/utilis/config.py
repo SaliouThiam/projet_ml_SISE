@@ -17,10 +17,6 @@ Ce que ce fichier NE décide PAS :
     mesures faites sur les données. Les listes ci-dessous ne sont donc que des
     CANDIDATES.
 
-Point d'attention : les noms de colonnes ont été relevés sur le jeu
-« dpe03existant » (logements existants). Ceux du jeu « dpe02neuf » restent à
-vérifier en comparant les deux schémas (GET /schema). L'extraction ne garde que
-les colonnes réellement présentes dans les deux jeux.
 """
 
 from pathlib import Path
@@ -87,6 +83,12 @@ VARIABLES_CANDIDATES_NUMERIQUES = [
     "hauteur_sous_plafond",
     "annee_construction",
     "nombre_niveau_logement",
+     "numero_etage_appartement",
+    "nombre_niveau_immeuble",
+    "nombre_appartement",
+    "surface_habitable_immeuble",
+    "volume_stockage_generateur_n1_ecs_n1",
+    "surface_chauffee_installation_chauffage_n1"
 ]
 
 VARIABLES_CANDIDATES_CATEGORIELLES = [
@@ -104,6 +106,21 @@ VARIABLES_CANDIDATES_CATEGORIELLES = [
     "classe_altitude",
     "classe_inertie_batiment",
     "logement_traversant",
+    "type_generateur_chauffage_principal",
+    "type_emetteur_installation_chauffage_n1",
+    "type_generateur_n1_installation_n1",
+    "type_installation_ecs",
+    "type_generateur_chauffage_principal_ecs",
+    "type_generateur_n1_ecs_n1",
+    "typologie_logement",
+    "position_logement_dans_immeuble",
+    "isolation_toiture",
+    "inertie_lourde",
+    "type_generateur_froid",
+    "protection_solaire_exterieure",
+    "presence_brasseur_air",
+    "presence_production_pv",
+    "type_installation_solaire_n1"
 ]
 
 VARIABLES_CANDIDATES = (

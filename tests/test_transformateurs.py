@@ -66,3 +66,26 @@ def test_preprocesseur_ne_laisse_aucune_valeur_manquante():
         prep.fit(train)
         assert not np.isnan(np.asarray(prep.transform(train), dtype=float)).any()
         assert not np.isnan(np.asarray(prep.transform(test), dtype=float)).any()
+
+
+def test_preprocesseur_accepte_des_colonnes_melangees():
+    """Colonnes catégorielles codées en nombres, en booléens ou en texte, avec des manquants."""
+    train = pd.DataFrame({
+        "x": [1.0, 2.0, np.nan, 4.0, 5.0, 6.0],
+        "a": [1.0, 0.0, np.nan, 1.0, 0.0, 1.0],                  # indicateur codé en nombres
+        "b": [True, False, True, np.nan, False, True],            # booléens avec manquants
+        "c": ["x", "y", np.nan, "x", "y", "x"],                   # texte
+    })
+    test = pd.DataFrame({"x": [3.0], "a": [2.0], "b": [np.nan], "c": ["jamais vu"]})
+    for mode in ("arbres", "lineaire"):
+        prep = tf.construire_preprocesseur(["x"], ["a", "b", "c"], pour=mode).fit(train)
+        assert not np.isnan(np.asarray(prep.transform(train), dtype=float)).any()
+        assert not np.isnan(np.asarray(prep.transform(test), dtype=float)).any()
+
+
+def test_plausibilite_convertit_le_texte_en_nombre():
+    df = pd.DataFrame({"numero_etage_appartement": ["3", "RDC", "70"],
+                       "nombre_appartement": [12, 0, 5000]})
+    sortie, compte = tf.appliquer_plausibilite(df)
+    assert sortie["numero_etage_appartement"].isna().tolist() == [False, True, True]
+    assert sortie["nombre_appartement"].isna().tolist() == [False, True, True]

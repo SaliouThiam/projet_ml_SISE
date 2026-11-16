@@ -1,0 +1,39 @@
+{
+  "variables_numeriques": [
+    "annee_construction",
+    "surface_habitable_logement",
+    "hauteur_sous_plafond"
+  ],
+  "variables_categorielles": [
+    "famille_ventilation",
+    "periode_construction",
+    "qualite_isolation_murs",
+    "classe_altitude",
+    "qualite_isolation_enveloppe",
+    "qualite_isolation_menuiseries",
+    "classe_inertie_batiment",
+    "qualite_isolation_plancher_bas",
+    "famille_energie_chauffage",
+    "logement_traversant",
+    "famille_energie_ecs"
+  ],
+  "variables_retirees": {
+    "zone_climatique": "quasi constante (99.1% dans une modalité)",
+    "type_ventilation": "libellés regroupés dans famille_ventilation",
+    "type_energie_principale_chauffage": "libellés regroupés dans famille_energie_chauffage",
+    "type_energie_principale_ecs": "libellés regroupés dans famille_energie_ecs",
+    "nombre_niveau_logement": "faible importance (hors des 95% cumulés ; 1.8%)",
+    "type_installation_chauffage": "faible importance (hors des 95% cumulés ; 1.2%)",
+    "type_batiment": "faible importance (hors des 95% cumulés ; 0.9%)"
+  },
+  "parametres": {
+    "graine": 42,
+    "taille_test": 0.2,
+    "dedoublonner_copies_exactes": true,
+    "seuil_conso_aberrante": 1000,
+    "seuil_manquants": 0.5,
+    "seuil_part_dominante": 0.99,
+    "seuil_correlation": 0.9,
+    "part_importance_cumulee": 0.95
+  }
+}

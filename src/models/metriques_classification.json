@@ -1,0 +1,61 @@
+{
+  "modele": "Forêt aléatoire",
+  "parametres": {
+    "modele__max_features": 0.5,
+    "modele__min_samples_leaf": 3
+  },
+  "variables": [
+    "annee_construction",
+    "surface_habitable_logement",
+    "surface_chauffee_installation_chauffage_n1",
+    "hauteur_sous_plafond",
+    "volume_stockage_generateur_n1_ecs_n1",
+    "nombre_appartement",
+    "famille_ventilation",
+    "type_generateur_froid",
+    "qualite_isolation_murs",
+    "type_generateur_n1_ecs_n1",
+    "periode_construction",
+    "type_emetteur_installation_chauffage_n1",
+    "type_generateur_n1_installation_n1",
+    "qualite_isolation_enveloppe",
+    "qualite_isolation_menuiseries",
+    "classe_altitude",
+    "qualite_isolation_plancher_bas",
+    "classe_inertie_batiment",
+    "famille_energie_chauffage",
+    "isolation_toiture",
+    "type_installation_ecs",
+    "inertie_lourde",
+    "protection_solaire_exterieure"
+  ],
+  "validation_croisee_train": {
+    "f1_macro": 0.5196463548262282,
+    "exactitude": 0.6430045917649255,
+    "exactitude_equilibree": 0.5239810317142428,
+    "a_une_classe_pres": 0.9451342281716967,
+    "f1_macro_ecart_type": 0.008437984357775288
+  },
+  "test": {
+    "f1_macro": 0.5105987661885715,
+    "exactitude": 0.6368533387539385,
+    "exactitude_equilibree": 0.512679544418882,
+    "a_une_classe_pres": 0.9485720093505438
+  },
+  "test_intervalle_95": {
+    "f1_macro": [
+      0.4916648267047893,
+      0.529720324197168
+    ],
+    "exactitude": [
+      0.617000106089187,
+      0.6584751727307459
+    ]
+  },
+  "test_reference": {
+    "f1_macro": 0.07746605568666462,
+    "exactitude": 0.37198902327472305,
+    "exactitude_equilibree": 0.14285714285714285,
+    "a_une_classe_pres": 0.7064742351865027
+  }
+}

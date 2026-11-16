@@ -28,6 +28,8 @@ from sklearn.preprocessing import (
     StandardScaler,
 )
 
+from src.utilis import config
+
 # ---------------------------------------------------------------------------
 # 1. Plausibilité des valeurs (règles de bon sens, à justifier dans le rapport)
 #    Une valeur impossible est remplacée par NaN : la ligne est conservée et la
@@ -39,18 +41,28 @@ NIVEAUX_MAX = 15
 
 
 def appliquer_plausibilite(df):
-    """Remplace par NaN les valeurs impossibles. Retourne (tableau, nombre de valeurs touchées)."""
+    """Convertit les variables numériques candidates en nombres puis remplace par NaN les valeurs impossibles.
+
+    Retourne (tableau, nombre de valeurs impossibles remplacées par colonne).
+    """
     d = df.copy()
     regles = {
         "surface_habitable_logement": lambda s: s <= 0,
         "hauteur_sous_plafond": lambda s: (s < HAUTEUR_MIN) | (s > HAUTEUR_MAX),
         "annee_construction": lambda s: (s < 1700) | (s > ANNEE_MAX_PLAUSIBLE),
         "nombre_niveau_logement": lambda s: (s < 1) | (s > NIVEAUX_MAX),
+        "nombre_niveau_immeuble": lambda s: (s < 1) | (s > 60),
+        "nombre_appartement": lambda s: (s < 1) | (s > 2000),
+        "surface_habitable_immeuble": lambda s: s <= 0,
+        "numero_etage_appartement": lambda s: (s < -5) | (s > 60),
     }
+    for colonne in set(config.VARIABLES_CANDIDATES_NUMERIQUES) | set(regles):
+        if colonne in d.columns:
+            d[colonne] = pd.to_numeric(d[colonne], errors="coerce")   # texte -> NaN
+
     compte = {}
     for colonne, invalide in regles.items():
         if colonne in d.columns:
-            d[colonne] = pd.to_numeric(d[colonne], errors="coerce")
             masque = invalide(d[colonne]).fillna(False)
             compte[colonne] = int(masque.sum())
             d.loc[masque, colonne] = np.nan
@@ -142,9 +154,13 @@ def ajouter_variables(df):
 # 3. Préprocesseur scikit-learn (APPREND : à ajuster sur le train uniquement)
 # ---------------------------------------------------------------------------
 def _vers_objet(X):
-    """Convertit en type « objet » pour que l'imputation de texte fonctionne partout."""
+    """Convertit chaque valeur en texte (les absentes restent NaN).
+
+    Les encodeurs refusent les colonnes qui mélangent nombres, booléens et texte
+    (par exemple 1.0 / True / « inconnu » après l'imputation) : on uniformise.
+    """
     X = pd.DataFrame(X)
-    return X.astype(object).where(X.notna(), np.nan)
+    return X.apply(lambda col: col.map(lambda v: np.nan if pd.isna(v) else str(v))).astype(object)
 
 
 def construire_preprocesseur(variables_numeriques, variables_categorielles, pour="arbres"):
