@@ -1,5 +1,5 @@
 """
-transformateurs.py : transformations réutilisables (notebooks, modèles, application).
+Ce fichier permet de faire des transformations réutilisables (notebooks, modèles, application).
 
 Deux familles de fonctions :
 
