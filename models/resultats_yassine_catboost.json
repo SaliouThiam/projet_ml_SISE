@@ -1,0 +1,53 @@
+{
+  "modele_classification": "M10_CatBoost_standard",
+  "modele_regression": "M9_CatBoost",
+  "nombre_variables": 23,
+  "variables_numeriques": [
+    "annee_construction",
+    "surface_habitable_logement",
+    "surface_chauffee_installation_chauffage_n1",
+    "hauteur_sous_plafond",
+    "volume_stockage_generateur_n1_ecs_n1",
+    "nombre_appartement"
+  ],
+  "variables_categorielles": [
+    "famille_ventilation",
+    "type_generateur_froid",
+    "qualite_isolation_murs",
+    "type_generateur_n1_ecs_n1",
+    "periode_construction",
+    "type_emetteur_installation_chauffage_n1",
+    "type_generateur_n1_installation_n1",
+    "qualite_isolation_enveloppe",
+    "qualite_isolation_menuiseries",
+    "classe_altitude",
+    "qualite_isolation_plancher_bas",
+    "classe_inertie_batiment",
+    "famille_energie_chauffage",
+    "isolation_toiture",
+    "type_installation_ecs",
+    "inertie_lourde",
+    "protection_solaire_exterieure"
+  ],
+  "taille_train": 39387,
+  "taille_test": 9839,
+  "resultats_classification": {
+    "F1_global": 0.5220019046813263,
+    "F1_existant": 0.511360113228214,
+    "F1_neuf_ABC": 0.7388677588321988,
+    "Accuracy": 0.6636853338753939,
+    "Precision_FG": 0.7247191011235955,
+    "Rappel_FG": 0.3014018691588785,
+    "F1_FG": 0.42574257425742573,
+    "Rappel_neuf_C": 0.45161290322580644
+  },
+  "resultats_regression": {
+    "MAE_global": 27.5403801684075,
+    "MAE_existant": 28.98961031106277,
+    "MAE_neuf": 9.798526362765063,
+    "MAE_FG": 96.25746135349803,
+    "WAPE_FG": 24.63790172711918,
+    "Biais_F": -59.72605681858108,
+    "Biais_G": -134.79173035825656
+  }
+}
