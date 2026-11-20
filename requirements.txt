@@ -17,3 +17,4 @@ joblib           # sauvegarde des pipelines entraînés
 # plotly           # graphiques interactifs de l'application
 # dash-bootstrap-components
 # gunicorn         # déploiement sur Render
+catboost
