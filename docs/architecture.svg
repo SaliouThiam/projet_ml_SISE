@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 700" width="1300" height="700" font-family="Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker></defs>
+<rect width="1300" height="700" fill="#ffffff"/>
+<text x="112.5" y="30" text-anchor="middle" font-size="13" font-weight="bold" fill="#555">Sources</text>
+<text x="327.5" y="30" text-anchor="middle" font-size="13" font-weight="bold" fill="#555">Acquisition</text>
+<text x="542.5" y="30" text-anchor="middle" font-size="13" font-weight="bold" fill="#555">Données</text>
+<text x="757.5" y="30" text-anchor="middle" font-size="13" font-weight="bold" fill="#555">Préparation</text>
+<text x="972.5" y="30" text-anchor="middle" font-size="13" font-weight="bold" fill="#555">Modélisation</text>
+<text x="1187.5" y="30" text-anchor="middle" font-size="13" font-weight="bold" fill="#555">Sortie</text>
+<text x="125" y="386" font-size="13" font-weight="bold" fill="#555">Application et déploiement</text>
+<rect x="225" y="510" width="850" height="115" rx="8" fill="none" stroke="#999" stroke-dasharray="5,4"/>
+<text x="235" y="528" font-size="11" fill="#555">Socle partagé (importé par les scripts et les notebooks)</text>
+<path d="M205,100.0 H235" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#ar)"/>
+<path d="M205,290.0 H235" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#ar)"/>
+<path d="M420,100.0 H450" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#ar)"/>
+<path d="M420,290.0 H450" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#ar)"/>
+<path d="M635,100.0 H665" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#ar)"/>
+<path d="M635,290.0 H665" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#ar)"/>
+<path d="M757.5,150 V250" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#ar)"/>
+<text x="765.5" y="204.0" font-size="10" fill="#333">train · test</text>
+<path d="M850,290.0 H880" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#ar)"/>
+<path d="M850,100.0 H865.0 V80.0 H880" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#ar)"/>
+<path d="M850,100.0 H865.0 V190.0 H880" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#ar)"/>
+<path d="M1065,80.0 H1080.0 V145.0 H1095" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#ar)"/>
+<path d="M1065,190.0 H1080.0 V145.0 H1095" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#ar)"/>
+<path d="M1187.5,205 V365 H112.5 V400" fill="none" stroke="#333" stroke-width="1.5" stroke-dasharray="6,4" marker-end="url(#ar)"/>
+<text x="650.0" y="359" text-anchor="middle" font-size="10" fill="#333">train/test + modèles .joblib</text>
+<path d="M205,440.0 H235" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#ar)"/>
+<path d="M420,440.0 H450" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#ar)"/>
+<path d="M635,440.0 H665" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#ar)"/>
+<path d="M850,440.0 H880" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#ar)"/>
+<path d="M1065,440.0 H1095" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="20" y="60" width="185" height="80" rx="8" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.5"/>
+<text x="112.5" y="89.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">API ADEME</text>
+<text x="112.5" y="104.0" text-anchor="middle" font-size="11" fill="#222">data-fair</text>
+<text x="112.5" y="119.0" text-anchor="middle" font-size="11" fill="#222">dpe03existant · dpe02neuf</text>
+<rect x="20" y="250" width="185" height="80" rx="8" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.5"/>
+<text x="112.5" y="279.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">Normales climatiques</text>
+<text x="112.5" y="294.0" text-anchor="middle" font-size="11" fill="#222">1991-2020 · Weatheo</text>
+<text x="112.5" y="309.0" text-anchor="middle" font-size="11" fill="#222">(data.gouv.fr, CSV)</text>
+<rect x="235" y="60" width="185" height="80" rx="8" fill="#d5e8d4" stroke="#82b366" stroke-width="1.5"/>
+<text x="327.5" y="89.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">extraction.py</text>
+<text x="327.5" y="104.0" text-anchor="middle" font-size="11" fill="#222">API → CSV bruts</text>
+<text x="327.5" y="119.0" text-anchor="middle" font-size="11" fill="#222">filtre région, reprises</text>
+<rect x="235" y="250" width="185" height="80" rx="8" fill="#d5e8d4" stroke="#82b366" stroke-width="1.5"/>
+<text x="327.5" y="279.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">preparer_meteo_corse.py</text>
+<text x="327.5" y="294.0" text-anchor="middle" font-size="11" fill="#222">agrégat annuel</text>
+<text x="327.5" y="309.0" text-anchor="middle" font-size="11" fill="#222">360 communes corses</text>
+<path d="M450,70 a92.5,10 0 0 1 185,0 v60 a92.5,10 0 0 1 -185,0 z" fill="#fff2cc" stroke="#d6b656" stroke-width="1.5"/>
+<path d="M450,70 a92.5,10 0 0 0 185,0" fill="none" stroke="#d6b656" stroke-width="1.5"/>
+<text x="542.5" y="97.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">data/raw</text>
+<text x="542.5" y="112.0" text-anchor="middle" font-size="11" fill="#222">dpe_existant.csv</text>
+<text x="542.5" y="127.0" text-anchor="middle" font-size="11" fill="#222">dpe_neuf.csv</text>
+<path d="M450,260 a92.5,10 0 0 1 185,0 v60 a92.5,10 0 0 1 -185,0 z" fill="#fff2cc" stroke="#d6b656" stroke-width="1.5"/>
+<path d="M450,260 a92.5,10 0 0 0 185,0" fill="none" stroke="#d6b656" stroke-width="1.5"/>
+<text x="542.5" y="294.5" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">data/processed</text>
+<text x="542.5" y="309.5" text-anchor="middle" font-size="11" fill="#222">meteo_corse_communes.csv</text>
+<rect x="665" y="50" width="185" height="100" rx="8" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.5"/>
+<text x="757.5" y="81.5" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">Notebooks 01 et 02</text>
+<text x="757.5" y="96.5" text-anchor="middle" font-size="11" fill="#222">exploration, nettoyage,</text>
+<text x="757.5" y="111.5" text-anchor="middle" font-size="11" fill="#222">sélection de variables</text>
+<text x="757.5" y="126.5" text-anchor="middle" font-size="11" fill="#222">→ train.csv · test.csv</text>
+<rect x="665" y="250" width="185" height="80" rx="8" fill="#d5e8d4" stroke="#82b366" stroke-width="1.5"/>
+<text x="757.5" y="279.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">enrichissement_meteo.py</text>
+<text x="757.5" y="294.0" text-anchor="middle" font-size="11" fill="#222">+ notebook 05</text>
+<text x="757.5" y="309.0" text-anchor="middle" font-size="11" fill="#222">→ train_meteo / test_meteo</text>
+<rect x="880" y="40" width="185" height="80" rx="8" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.5"/>
+<text x="972.5" y="69.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">Notebook 03</text>
+<text x="972.5" y="84.0" text-anchor="middle" font-size="11" fill="#222">Classification (A–G)</text>
+<text x="972.5" y="99.0" text-anchor="middle" font-size="11" fill="#222">Gradient boosting</text>
+<rect x="880" y="150" width="185" height="80" rx="8" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.5"/>
+<text x="972.5" y="179.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">Notebook 04</text>
+<text x="972.5" y="194.0" text-anchor="middle" font-size="11" fill="#222">Régression (kWh/m²/an)</text>
+<text x="972.5" y="209.0" text-anchor="middle" font-size="11" fill="#222">Gradient boosting</text>
+<rect x="880" y="250" width="185" height="80" rx="8" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.5"/>
+<text x="972.5" y="279.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">decision_meteo.json</text>
+<text x="972.5" y="294.0" text-anchor="middle" font-size="11" fill="#222">classification : gain faible</text>
+<text x="972.5" y="309.0" text-anchor="middle" font-size="11" fill="#222">régression : non retenue</text>
+<rect x="1095" y="85" width="185" height="120" rx="8" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.5"/>
+<text x="1187.5" y="126.5" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">Modèles et métriques</text>
+<text x="1187.5" y="141.5" text-anchor="middle" font-size="11" fill="#222">src/models/*.joblib</text>
+<text x="1187.5" y="156.5" text-anchor="middle" font-size="11" fill="#222">metriques_*.json</text>
+<text x="1187.5" y="171.5" text-anchor="middle" font-size="11" fill="#222">variables_retenues.json</text>
+<path d="M20,410 a92.5,10 0 0 1 185,0 v60 a92.5,10 0 0 1 -185,0 z" fill="#fff2cc" stroke="#d6b656" stroke-width="1.5"/>
+<path d="M20,410 a92.5,10 0 0 0 185,0" fill="none" stroke="#d6b656" stroke-width="1.5"/>
+<text x="112.5" y="437.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">Entrées de l'application</text>
+<text x="112.5" y="452.0" text-anchor="middle" font-size="11" fill="#222">train.csv · test.csv</text>
+<text x="112.5" y="467.0" text-anchor="middle" font-size="11" fill="#222">modèles .joblib</text>
+<rect x="235" y="400" width="185" height="80" rx="8" fill="#d5e8d4" stroke="#82b366" stroke-width="1.5"/>
+<text x="327.5" y="429.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">preparer_donnees_app.py</text>
+<text x="327.5" y="444.0" text-anchor="middle" font-size="11" fill="#222">scripts/</text>
+<text x="327.5" y="459.0" text-anchor="middle" font-size="11" fill="#222">données légères + formulaire</text>
+<path d="M450,410 a92.5,10 0 0 1 185,0 v60 a92.5,10 0 0 1 -185,0 z" fill="#fff2cc" stroke="#d6b656" stroke-width="1.5"/>
+<path d="M450,410 a92.5,10 0 0 0 185,0" fill="none" stroke="#d6b656" stroke-width="1.5"/>
+<text x="542.5" y="437.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">app/data</text>
+<text x="542.5" y="452.0" text-anchor="middle" font-size="11" fill="#222">logements_app.csv.gz</text>
+<text x="542.5" y="467.0" text-anchor="middle" font-size="11" fill="#222">formulaire.json</text>
+<rect x="665" y="400" width="185" height="80" rx="8" fill="#f8cecc" stroke="#b85450" stroke-width="1.5"/>
+<text x="757.5" y="429.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">Application Dash</text>
+<text x="757.5" y="444.0" text-anchor="middle" font-size="11" fill="#222">app/ : 4 pages</text>
+<text x="757.5" y="459.0" text-anchor="middle" font-size="11" fill="#222">src/models/predict.py</text>
+<rect x="880" y="400" width="185" height="80" rx="8" fill="#f8cecc" stroke="#b85450" stroke-width="1.5"/>
+<text x="972.5" y="429.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">Dockerfile</text>
+<text x="972.5" y="444.0" text-anchor="middle" font-size="11" fill="#222">python:3.12-slim</text>
+<text x="972.5" y="459.0" text-anchor="middle" font-size="11" fill="#222">gunicorn app.app:server</text>
+<rect x="1095" y="400" width="185" height="80" rx="8" fill="#b0e3e6" stroke="#0e8088" stroke-width="1.5"/>
+<text x="1187.5" y="429.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">Render</text>
+<text x="1187.5" y="444.0" text-anchor="middle" font-size="11" fill="#222">service web (Docker)</text>
+<text x="1187.5" y="459.0" text-anchor="middle" font-size="11" fill="#222">port fourni par $PORT</text>
+<rect x="235" y="545" width="260" height="70" rx="8" fill="#f5f5f5" stroke="#666666" stroke-width="1.5"/>
+<text x="365.0" y="576.5" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">config.py</text>
+<text x="365.0" y="591.5" text-anchor="middle" font-size="11" fill="#222">constantes · seuils DPE · cibles</text>
+<rect x="520" y="545" width="260" height="70" rx="8" fill="#f5f5f5" stroke="#666666" stroke-width="1.5"/>
+<text x="650.0" y="576.5" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">regles_dpe.py</text>
+<text x="650.0" y="591.5" text-anchor="middle" font-size="11" fill="#222">étiquette théorique (A–G)</text>
+<rect x="805" y="545" width="260" height="70" rx="8" fill="#f5f5f5" stroke="#666666" stroke-width="1.5"/>
+<text x="935.0" y="576.5" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">transformateurs.py</text>
+<text x="935.0" y="591.5" text-anchor="middle" font-size="11" fill="#222">plausibilité · familles · préprocesseur</text>
+<rect x="1095" y="545" width="185" height="70" rx="8" fill="#f5f5f5" stroke="#666666" stroke-width="1.5"/>
+<text x="1187.5" y="569.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">tests/</text>
+<text x="1187.5" y="584.0" text-anchor="middle" font-size="11" fill="#222">test_transformateurs.py</text>
+<text x="1187.5" y="599.0" text-anchor="middle" font-size="11" fill="#222">test_meteo.py</text>
+<rect x="20" y="658" width="18" height="14" rx="3" fill="#dae8fc" stroke="#6c8ebf"/>
+<text x="44" y="669" font-size="11" fill="#222">Source externe</text>
+<rect x="190" y="658" width="18" height="14" rx="3" fill="#d5e8d4" stroke="#82b366"/>
+<text x="214" y="669" font-size="11" fill="#222">Script Python</text>
+<rect x="360" y="658" width="18" height="14" rx="3" fill="#fff2cc" stroke="#d6b656"/>
+<text x="384" y="669" font-size="11" fill="#222">Données (CSV)</text>
+<rect x="530" y="658" width="18" height="14" rx="3" fill="#ffe6cc" stroke="#d79b00"/>
+<text x="554" y="669" font-size="11" fill="#222">Notebook</text>
+<rect x="700" y="658" width="18" height="14" rx="3" fill="#e1d5e7" stroke="#9673a6"/>
+<text x="724" y="669" font-size="11" fill="#222">Résultats</text>
+<rect x="870" y="658" width="18" height="14" rx="3" fill="#f8cecc" stroke="#b85450"/>
+<text x="894" y="669" font-size="11" fill="#222">Application</text>
+<rect x="1040" y="658" width="18" height="14" rx="3" fill="#b0e3e6" stroke="#0e8088"/>
+<text x="1064" y="669" font-size="11" fill="#222">Déploiement</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpkMWMyNmQyOC1jNTcyLTRiZDktOTQ2Yi1jY2U2ODdjNDliYTMAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaM0CBxobcfipTlpDjRueoBkAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpjM2MyNzc4NC1kYjQ3LTQ2YTQtYTljMC1hZGZmOWQ2NWRhZjJscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoVE6TKc4puu5RtLRxRAPnZAAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggvw7o0gLK2Q0oiwWmgd1vOxu2gKsAGMWcb6QAPK7fByukZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaPlIkiP1ADAOJJfV0jA/O9EAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIFELLRGRK/HkVvSoZ+NY3Tzjxm4DSEMnyrBJnBROw6NcZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GTbxZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmQxYzI2ZDI4LWM1NzItNGJkOS05NDZiLWNjZTY4N2M0OWJhMy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmYxMDY4N2RlLTMyMTUtNDc4MC05NTQzLTUxZDU3MGUwMDE0NnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCC/DujSAsrZDSiLBaaB3W87G7aAqwAYxZxvpAA8rt8HK6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggS5Jm0VYlHRnZNxhSuAGNT47XacTzR9mfObtPpAYpIBmiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgg9HOhQm/j5IlFiOpm9SOntxvAOgfGuQNndtd2cRgfOAB0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQI8VFYvVfeC3l1ns3GDZGRTM2K5kUhbWg4r36v5EwZ88EqEvvApRM1RUcGv4D2aU4mBerfxCCCqMubMUBVShKb4=</c2pa:manifest></metadata></svg>
