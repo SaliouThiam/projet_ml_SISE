@@ -1,0 +1,16 @@
+body { background-color: #f6f8fa; }
+.barre-navigation { background: linear-gradient(90deg, #1b4f72, #2c7fb8); }
+.barre-navigation .nav-link { color: #e8f1f8 !important; font-weight: 500; }
+.barre-navigation .nav-link.active { color: #ffffff !important; border-bottom: 3px solid #cbfc34; }
+.titre-page { color: #1b4f72; font-weight: 700; }
+.kpi-valeur { font-size: 1.7rem; font-weight: 700; color: #1b4f72; line-height: 1.1; }
+.kpi-titre { color: #6c757d; font-size: .85rem; }
+.kpi-icone { font-size: 1.8rem; color: #2c7fb8; }
+.badge-dpe { display: inline-block; width: 5.2rem; height: 5.2rem; line-height: 5.2rem; text-align: center;
+             font-size: 3.2rem; font-weight: 800; border-radius: .7rem; color: #fff;
+             text-shadow: 0 1px 2px rgba(0,0,0,.35); }
+.dpe-A { background: #319834; } .dpe-B { background: #33cc31; } .dpe-C { background: #cbfc34; color: #333; text-shadow: none; }
+.dpe-D { background: #fbfe06; color: #333; text-shadow: none; } .dpe-E { background: #fbcc05; color: #333; text-shadow: none; }
+.dpe-F { background: #fc9935; } .dpe-G { background: #fc0205; }
+.carte-sans-bordure { border: none; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+.pied-de-page { color: #6c757d; font-size: .85rem; }

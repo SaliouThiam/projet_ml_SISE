@@ -2,6 +2,7 @@
   "modele": "Gradient boosting",
   "parametres": {
     "modele__learning_rate": 0.1,
+    "modele__max_iter": 300,
     "modele__max_leaf_nodes": 63
   },
   "variables": [
@@ -29,7 +30,7 @@
     "inertie_lourde",
     "protection_solaire_exterieure"
   ],
-  "taille_fichier_mo": 0.3,
+  "taille_fichier_mo": 0.9,
   "validation_croisee_train": {
     "mae": 27.549909871445927,
     "rmse": 43.742984471574474,
@@ -38,20 +39,20 @@
     "mae_ecart_type": 0.8357648131024698
   },
   "test": {
-    "mae": 27.043714434826736,
-    "rmse": 42.13572433015896,
-    "r2": 0.7724079977558789,
-    "erreur_absolue_mediane": 16.432207493399133,
-    "biais": 1.4091609288634956
+    "mae": 26.702423999424177,
+    "rmse": 41.820962179336604,
+    "r2": 0.7757956113179287,
+    "erreur_absolue_mediane": 15.712579973940748,
+    "biais": 1.5373295372575881
   },
   "test_intervalle_95": {
     "mae": [
-      25.83516196451414,
-      28.43185689617664
+      25.414118550711045,
+      28.00879504432442
     ],
     "r2": [
-      0.7536502524938916,
-      0.7910778039560815
+      0.757897656561188,
+      0.7929279860758924
     ]
   },
   "test_reference": {
@@ -62,9 +63,9 @@
     "biais": -16.284378493749365
   },
   "etiquette_deduite_test": {
-    "f1_macro": 0.48464158826805237,
-    "exactitude": 0.6108344343937392,
-    "exactitude_equilibree": 0.47228546973331476,
-    "a_une_classe_pres": 0.9495883728021141
+    "f1_macro": 0.4837574410570666,
+    "exactitude": 0.6112409797743673,
+    "exactitude_equilibree": 0.47396784800319197,
+    "a_une_classe_pres": 0.9498932818375851
   }
 }

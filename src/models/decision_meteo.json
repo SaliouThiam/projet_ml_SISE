@@ -1,0 +1,33 @@
+{
+  "source": "normales climatiques 1991-2020 par commune (CC BY 4.0), voir SOURCE_METEO.md",
+  "variables": [
+    "temperature_moyenne_c",
+    "precipitation_annuelle_mm"
+  ],
+  "decision": {
+    "classification": {
+      "adopter": true,
+      "gain": 0.008990969665955473,
+      "meilleur_temoin": 0.0075121865904973495,
+      "ecart_type_entre_plis": 0.007426301565514433
+    },
+    "regression": {
+      "adopter": false,
+      "gain": 0.2320227551334213,
+      "meilleur_temoin": 0.24484221418081376,
+      "ecart_type_entre_plis": 0.8357648131024698
+    }
+  },
+  "test": {
+    "classification": {
+      "sans météo": {
+        "f1_macro": 0.5134854289203571,
+        "exactitude": 0.6277060676898059
+      },
+      "avec météo": {
+        "f1_macro": 0.5205737390795245,
+        "exactitude": 0.6302469763187316
+      }
+    }
+  }
+}

@@ -1,0 +1,793 @@
+{
+ "variables": [
+  "annee_construction",
+  "surface_habitable_logement",
+  "surface_chauffee_installation_chauffage_n1",
+  "hauteur_sous_plafond",
+  "volume_stockage_generateur_n1_ecs_n1",
+  "nombre_appartement",
+  "famille_ventilation",
+  "type_generateur_froid",
+  "qualite_isolation_murs",
+  "type_generateur_n1_ecs_n1",
+  "periode_construction",
+  "type_emetteur_installation_chauffage_n1",
+  "type_generateur_n1_installation_n1",
+  "qualite_isolation_enveloppe",
+  "qualite_isolation_menuiseries",
+  "classe_altitude",
+  "qualite_isolation_plancher_bas",
+  "classe_inertie_batiment",
+  "famille_energie_chauffage",
+  "isolation_toiture",
+  "type_installation_ecs",
+  "inertie_lourde",
+  "protection_solaire_exterieure"
+ ],
+ "numeriques": {
+  "annee_construction": {
+   "min": 1700.0,
+   "p05": 1947.0,
+   "mediane": 2000.0,
+   "p95": 2023.0,
+   "max": 2027.0
+  },
+  "surface_habitable_logement": {
+   "min": 5.2,
+   "p05": 26.9,
+   "mediane": 67.7,
+   "p95": 174.0,
+   "max": 2541.3
+  },
+  "surface_chauffee_installation_chauffage_n1": {
+   "min": 0.0,
+   "p05": 20.0,
+   "mediane": 62.6,
+   "p95": 1015.9,
+   "max": 8121.0
+  },
+  "hauteur_sous_plafond": {
+   "min": 1.8,
+   "p05": 2.4,
+   "mediane": 2.5,
+   "p95": 3.0,
+   "max": 5.0
+  },
+  "volume_stockage_generateur_n1_ecs_n1": {
+   "min": 0.0,
+   "p05": 0.0,
+   "mediane": 150.0,
+   "p95": 300.0,
+   "max": 46300.0
+  },
+  "nombre_appartement": {
+   "min": 1.0,
+   "p05": 1.0,
+   "mediane": 1.0,
+   "p95": 47.0,
+   "max": 688.0
+  }
+ },
+ "categorielles": {
+  "famille_ventilation": [
+   {
+    "valeur": "fenetres",
+    "part": 0.2635050707581437
+   },
+   {
+    "valeur": "vmc_hygro",
+    "part": 0.2596402522302618
+   },
+   {
+    "valeur": "vmc_autoreglable",
+    "part": 0.2354924011274809
+   },
+   {
+    "valeur": "naturelle",
+    "part": 0.0935692906750356
+   },
+   {
+    "valeur": "entrees_air",
+    "part": 0.09063435329671926
+   },
+   {
+    "valeur": "vmc_autre",
+    "part": 0.04614535204719147
+   },
+   {
+    "valeur": "vmc_double_flux",
+    "part": 0.007933048557231278
+   },
+   {
+    "valeur": "autre",
+    "part": 0.0030802313079359546
+   }
+  ],
+  "type_generateur_froid": [
+   {
+    "valeur": "PAC air/air installée à partir de 2015",
+    "part": 0.5814239960581424
+   },
+   {
+    "valeur": "PAC air/air installée entre 2008 et 2014",
+    "part": 0.21990638088199063
+   },
+   {
+    "valeur": "PAC air/air installée avant 2008",
+    "part": 0.15772357723577235
+   },
+   {
+    "valeur": "PAC air/eau installée après 2017",
+    "part": 0.01527469820152747
+   },
+   {
+    "valeur": "PAC air/eau installée avant 2008",
+    "part": 0.009312638580931265
+   },
+   {
+    "valeur": "PAC air/eau installée entre 2008 et 2014",
+    "part": 0.007686622320768662
+   },
+   {
+    "valeur": "PAC air/eau installée entre 2015 et 2016",
+    "part": 0.003350578960335058
+   },
+   {
+    "valeur": "autre système thermodynamique électrique",
+    "part": 0.002266568120226657
+   },
+   {
+    "valeur": "PAC géothermique installée après 2017",
+    "part": 0.001675289480167529
+   },
+   {
+    "valeur": "PAC géothermique installée entre 2008 et 2014",
+    "part": 0.0005420054200542005
+   },
+   {
+    "valeur": "PAC eau/eau installée après 2017",
+    "part": 0.0002463661000246366
+   },
+   {
+    "valeur": "PAC géothermique installée entre 2015 et 2016",
+    "part": 0.0001970928800197093
+   },
+   {
+    "valeur": "PAC géothermique installée avant 2008",
+    "part": 0.00014781966001478197
+   },
+   {
+    "valeur": "PAC eau/eau installée entre 2015 et 2016",
+    "part": 9.854644000985464e-05
+   },
+   {
+    "valeur": "autre système de refroidissement",
+    "part": 4.927322000492732e-05
+   },
+   {
+    "valeur": "PAC eau/eau installée entre 2008 et 2014",
+    "part": 4.927322000492732e-05
+   },
+   {
+    "valeur": "PAC eau/eau installée avant 2008",
+    "part": 4.927322000492732e-05
+   }
+  ],
+  "qualite_isolation_murs": [
+   {
+    "valeur": "insuffisante",
+    "part": 0.47851919561243145
+   },
+   {
+    "valeur": "bonne",
+    "part": 0.1993956936827138
+   },
+   {
+    "valeur": "très bonne",
+    "part": 0.1966280723136299
+   },
+   {
+    "valeur": "moyenne",
+    "part": 0.12545703839122485
+   }
+  ],
+  "type_generateur_n1_ecs_n1": [
+   {
+    "valeur": "Ballon électrique à accumulation vertical Catégorie B ou 2 étoiles",
+    "part": 0.2992648531136474
+   },
+   {
+    "valeur": "Ballon électrique à accumulation vertical Autres ou inconnue",
+    "part": 0.26164936067965333
+   },
+   {
+    "valeur": "CET sur air extérieur après 2014",
+    "part": 0.08129523155696673
+   },
+   {
+    "valeur": "Ballon électrique à accumulation horizontal",
+    "part": 0.058211047226751335
+   },
+   {
+    "valeur": "Ballon électrique à accumulation vertical Catégorie C ou 3 étoiles",
+    "part": 0.05660917074287022
+   },
+   {
+    "valeur": "Chaudière gaz standard 2001-2015",
+    "part": 0.037329443061872476
+   },
+   {
+    "valeur": "CET sur air extrait après 2014",
+    "part": 0.027660974284161446
+   },
+   {
+    "valeur": "Chaudière gaz à condensation après 2015",
+    "part": 0.019823221488028835
+   },
+   {
+    "valeur": "CET sur air ambiant (sur local non chauffé) après 2014",
+    "part": 0.018078320318086902
+   },
+   {
+    "valeur": "Chaudière gaz standard après 2015",
+    "part": 0.01370176492462599
+   },
+   {
+    "valeur": "Chaudière gpl/propane/butane standard 2001-2015",
+    "part": 0.012128493377957036
+   },
+   {
+    "valeur": "Chaudière gaz à condensation 2001-2015",
+    "part": 0.01086987614062187
+   },
+   {
+    "valeur": "chauffe-eau électrique instantané",
+    "part": 0.010784061328985383
+   },
+   {
+    "valeur": "Chaudière gpl/propane/butane à condensation après 2015",
+    "part": 0.008095197231042078
+   },
+   {
+    "valeur": "Chaudière gaz basse température après 2015",
+    "part": 0.0076947281100717985
+   },
+   {
+    "valeur": "Chaudière gaz standard 1991-2000",
+    "part": 0.006235876312251494
+   },
+   {
+    "valeur": "PAC double service après 2014",
+    "part": 0.005778197316856889
+   },
+   {
+    "valeur": "Chaudière gpl/propane/butane basse température 2001-2015",
+    "part": 0.005749592379644727
+   },
+   {
+    "valeur": "Chauffe-eau gaz à production instantanée 2001-2015",
+    "part": 0.0044623702050974
+   },
+   {
+    "valeur": "Chaudière gaz basse température 2001-2015",
+    "part": 0.004433765267885237
+   },
+   {
+    "valeur": "CET sur air extérieur 2010-2014",
+    "part": 0.0039188763980663064
+   },
+   {
+    "valeur": "Chaudière gaz classique avant 1981",
+    "part": 0.002860493721216282
+   },
+   {
+    "valeur": "Chaudière gpl/propane/butane basse température après 2015",
+    "part": 0.0028318887840041193
+   },
+   {
+    "valeur": "Chaudière gpl/propane/butane à condensation 2001-2015",
+    "part": 0.0025744443490946537
+   },
+   {
+    "valeur": "Chauffe-eau gaz à production instantanée 1990-2000",
+    "part": 0.002517234474670328
+   },
+   {
+    "valeur": "Chaudière gaz classique 1986-1990",
+    "part": 0.002202580165336537
+   },
+   {
+    "valeur": "Chaudière gpl/propane/butane standard 1991-2000",
+    "part": 0.002202580165336537
+   },
+   {
+    "valeur": "Chaudière fioul standard 1991-2015",
+    "part": 0.002202580165336537
+   },
+   {
+    "valeur": "Chaudière gpl/propane/butane classique avant 1981",
+    "part": 0.0020309505420635604
+   },
+   {
+    "valeur": "Chaudière gpl/propane/butane standard après 2015",
+    "part": 0.0019451357304270717
+   }
+  ],
+  "periode_construction": [
+   {
+    "valeur": "1948-1974",
+    "part": 0.18649231941094324
+   },
+   {
+    "valeur": "2013-2021",
+    "part": 0.16920147264186874
+   },
+   {
+    "valeur": "avant 1948",
+    "part": 0.13015107274343024
+   },
+   {
+    "valeur": "2006-2012",
+    "part": 0.1132664720071093
+   },
+   {
+    "valeur": "1989-2000",
+    "part": 0.09221784943506411
+   },
+   {
+    "valeur": "après 2021",
+    "part": 0.08561635140281833
+   },
+   {
+    "valeur": "1978-1982",
+    "part": 0.07302272438745715
+   },
+   {
+    "valeur": "1983-1988",
+    "part": 0.06479624222419703
+   },
+   {
+    "valeur": "2001-2005",
+    "part": 0.04623587660276755
+   },
+   {
+    "valeur": "1975-1977",
+    "part": 0.03899961914434429
+   }
+  ],
+  "type_emetteur_installation_chauffage_n1": [
+   {
+    "valeur": "Soufflage d'air chaud (air soufflé) avec distribution par fluide frigorigène",
+    "part": 0.2014548566538297
+   },
+   {
+    "valeur": "Convecteur électrique NFC, NF** et NF***",
+    "part": 0.1932962487519612
+   },
+   {
+    "valeur": "Soufflage d'air chaud (air soufflé) avec distribution par réseau aéraulique",
+    "part": 0.18271287976037656
+   },
+   {
+    "valeur": "radiateur électrique NFC, NF** et NF***",
+    "part": 0.06615318784766795
+   },
+   {
+    "valeur": "Panneau rayonnant NFC, NF** et NF***",
+    "part": 0.05605477107402653
+   },
+   {
+    "valeur": "Poêle bois",
+    "part": 0.04903722721437741
+   },
+   {
+    "valeur": "Radiateur bitube avec robinet thermostatique sur réseau individuel eau chaude basse ou moyenne température(inf 65°C)",
+    "part": 0.042675795179004425
+   },
+   {
+    "valeur": "Soufflage d'air chaud sans réseau de distribution (ventiloconvecteur éléctrique)",
+    "part": 0.03431750106974754
+   },
+   {
+    "valeur": "Radiateur électrique à accumulation",
+    "part": 0.025246041934103552
+   },
+   {
+    "valeur": "Radiateur bitube sans robinet thermostatique sur réseau individuel eau chaude basse ou moyenne température(inf 65°C)",
+    "part": 0.022421908429610612
+   },
+   {
+    "valeur": "Radiateur monotube sans robinet thermostatique sur réseau individuel eau chaude haute température(sup ou egal 65°C)",
+    "part": 0.021765796605334474
+   },
+   {
+    "valeur": "Autres émetteurs à effet joule",
+    "part": 0.019940094137783484
+   },
+   {
+    "valeur": "Radiateur bitube sans robinet thermostatique sur réseau individuel eau chaude haute température(sup ou egal 65°C)",
+    "part": 0.0168306946227357
+   },
+   {
+    "valeur": "Plancher chauffant sur réseau individuel eau chaude haute température(sup ou egal 65°C)",
+    "part": 0.015033518756240195
+   },
+   {
+    "valeur": "Radiateur bitube avec robinet thermostatique sur réseau individuel eau chaude haute température(sup ou egal 65°C)",
+    "part": 0.013578662102410499
+   },
+   {
+    "valeur": "Radiateur monotube sans robinet thermostatique sur réseau individuel eau chaude basse ou moyenne température(inf 65°C)",
+    "part": 0.006760804450149764
+   },
+   {
+    "valeur": "Radiateur monotube avec robinet thermostatique sur réseau individuel eau chaude haute température(sup ou egal 65°C)",
+    "part": 0.0050777349878761945
+   },
+   {
+    "valeur": "Radiateur bitube avec robinet thermostatique sur réseau collectif eau chaude basse ou moyenne température(inf 65°C)",
+    "part": 0.004706889174154899
+   },
+   {
+    "valeur": "Radiateur bitube sans robinet thermostatique sur réseau collectif eau chaude haute température(sup ou egal 65°C)",
+    "part": 0.004649835972043931
+   },
+   {
+    "valeur": "Radiateur bitube avec robinet thermostatique sur réseau collectif eau chaude haute température(sup ou egal 65°C)",
+    "part": 0.0027956069034374554
+   },
+   {
+    "valeur": "Plancher chauffant sur réseau individuel eau chaude basse ou moyenne température(inf 65°C)",
+    "part": 0.002738553701326487
+   },
+   {
+    "valeur": "Radiateur monotube avec robinet thermostatique sur réseau individuel eau chaude basse ou moyenne température(inf 65°C)",
+    "part": 0.002253601483383255
+   },
+   {
+    "valeur": "Radiateur bitube sans robinet thermostatique sur réseau collectif eau chaude basse ou moyenne température(inf 65°C)",
+    "part": 0.0020824418770503494
+   },
+   {
+    "valeur": "Radiateur monotube sans robinet thermostatique sur réseau collectif eau chaude haute température(sup ou egal 65°C)",
+    "part": 0.0017686492654400228
+   },
+   {
+    "valeur": "Autres équipements",
+    "part": 0.001084010840108401
+   },
+   {
+    "valeur": "Plancher chauffant sur réseau collectif eau chaude haute température(sup ou egal 65°C)",
+    "part": 0.0010554842390529168
+   },
+   {
+    "valeur": "Radiateur gaz à ventouse ou sur conduit de fumée",
+    "part": 0.0007702182284980744
+   },
+   {
+    "valeur": "Plancher rayonnant électrique avec régulation terminale",
+    "part": 0.0006846384253316217
+   },
+   {
+    "valeur": "Radiateur monotube avec robinet thermostatique sur réseau collectif eau chaude basse ou moyenne température(inf 65°C)",
+    "part": 0.0006561118242761375
+   },
+   {
+    "valeur": "Plancher chauffant sur réseau collectif eau chaude basse ou moyenne température(inf 65°C)",
+    "part": 0.0005134788189987163
+   }
+  ],
+  "type_generateur_n1_installation_n1": [
+   {
+    "valeur": "PAC air/air installée à partir de 2015",
+    "part": 0.26960490657538155
+   },
+   {
+    "valeur": "Convecteur électrique NFC, NF** et NF***",
+    "part": 0.19540721723006704
+   },
+   {
+    "valeur": "PAC air/air installée entre 2008 et 2014",
+    "part": 0.09145628298388248
+   },
+   {
+    "valeur": "Panneau rayonnant électrique NFC, NF** et NF***",
+    "part": 0.05699614890885751
+   },
+   {
+    "valeur": "radiateur électrique NFC, NF** et NF***",
+    "part": 0.05539865924975039
+   },
+   {
+    "valeur": "Radiateur électrique à accumulation",
+    "part": 0.03762658679218371
+   },
+   {
+    "valeur": "Chaudière gaz standard 2001-2015",
+    "part": 0.03754100698901726
+   },
+   {
+    "valeur": "PAC air/air installée avant 2008",
+    "part": 0.036884895164741124
+   },
+   {
+    "valeur": "Chaudière gaz à condensation après 2015",
+    "part": 0.019711881329339608
+   },
+   {
+    "valeur": "Autres émetteurs à effet joule",
+    "part": 0.019141349308229923
+   },
+   {
+    "valeur": "Chaudière gpl/propane/butane standard 2001-2015",
+    "part": 0.012237911852802739
+   },
+   {
+    "valeur": "Chaudière gaz à condensation 2001-2015",
+    "part": 0.011952645842247896
+   },
+   {
+    "valeur": "Chaudière gaz standard 1991-2000",
+    "part": 0.010554842390529168
+   },
+   {
+    "valeur": "Chaudière gaz standard après 2015",
+    "part": 0.010041363571530453
+   },
+   {
+    "valeur": "Chaudière gpl/propane/butane à condensation après 2015",
+    "part": 0.008329767508201398
+   },
+   {
+    "valeur": "insert installé entre 1990 et 2004",
+    "part": 0.007245756668092997
+   },
+   {
+    "valeur": "PAC air/eau installée après 2017",
+    "part": 0.006703751248038796
+   },
+   {
+    "valeur": "Chaudière gpl/propane/butane basse température 2001-2015",
+    "part": 0.005334474397375553
+   },
+   {
+    "valeur": "insert installé à partir de 2005 sans label flamme verte",
+    "part": 0.005163314791042648
+   },
+   {
+    "valeur": "insert installé installé à partir de 2018 avec label flamme verte",
+    "part": 0.004963628583654257
+   },
+   {
+    "valeur": "insert installé avant 1990",
+    "part": 0.004763942376265868
+   },
+   {
+    "valeur": "insert installé installé de 2007 à 2017 avec label flamme verte",
+    "part": 0.004678362573099415
+   },
+   {
+    "valeur": "Poêle bûche installé à partir de 2005 sans label flamme verte",
+    "part": 0.004649835972043931
+   },
+   {
+    "valeur": "Chaudière gaz basse température 2001-2015",
+    "part": 0.004592782769932962
+   },
+   {
+    "valeur": "Chaudière gaz basse température après 2015",
+    "part": 0.00450720296676651
+   },
+   {
+    "valeur": "Chaudière gpl/propane/butane standard 1991-2000",
+    "part": 0.004193410355156183
+   },
+   {
+    "valeur": "PAC air/eau installée entre 2008 et 2014",
+    "part": 0.003679931536157467
+   },
+   {
+    "valeur": "Chaudière fioul standard 1991-2015",
+    "part": 0.0035087719298245615
+   },
+   {
+    "valeur": "Chaudière gaz classique avant 1981",
+    "part": 0.003451718727713593
+   },
+   {
+    "valeur": "Poêle bûche installé installé à partir de 2018 avec label flamme verte",
+    "part": 0.0034231921266581087
+   }
+  ],
+  "qualite_isolation_enveloppe": [
+   {
+    "valeur": "insuffisante",
+    "part": 0.5246159705471626
+   },
+   {
+    "valeur": "bonne",
+    "part": 0.18923448013202995
+   },
+   {
+    "valeur": "moyenne",
+    "part": 0.1614320172654564
+   },
+   {
+    "valeur": "très bonne",
+    "part": 0.12471753205535102
+   }
+  ],
+  "qualite_isolation_menuiseries": [
+   {
+    "valeur": "moyenne",
+    "part": 0.4362828488003047
+   },
+   {
+    "valeur": "insuffisante",
+    "part": 0.27576488510854386
+   },
+   {
+    "valeur": "très bonne",
+    "part": 0.15114891456138124
+   },
+   {
+    "valeur": "bonne",
+    "part": 0.13680335152977022
+   }
+  ],
+  "classe_altitude": [
+   {
+    "valeur": "inférieur à 400m",
+    "part": 0.9278526087629664
+   },
+   {
+    "valeur": "400-800m",
+    "part": 0.06727047530577489
+   },
+   {
+    "valeur": "supérieur à 800m",
+    "part": 0.004876915931258709
+   }
+  ],
+  "qualite_isolation_plancher_bas": [
+   {
+    "valeur": "très bonne",
+    "part": 0.420412348279111
+   },
+   {
+    "valeur": "insuffisante",
+    "part": 0.2929668015296791
+   },
+   {
+    "valeur": "bonne",
+    "part": 0.19084963697832955
+   },
+   {
+    "valeur": "moyenne",
+    "part": 0.09577121321288035
+   }
+  ],
+  "classe_inertie_batiment": [
+   {
+    "valeur": "Moyenne",
+    "part": 0.3595898066390969
+   },
+   {
+    "valeur": "Lourde",
+    "part": 0.3107186766513915
+   },
+   {
+    "valeur": "Légère",
+    "part": 0.18305018441935844
+   },
+   {
+    "valeur": "Très lourde",
+    "part": 0.14664133229015314
+   }
+  ],
+  "famille_energie_chauffage": [
+   {
+    "valeur": "electricite",
+    "part": 0.8044179256061953
+   },
+   {
+    "valeur": "gaz_naturel",
+    "part": 0.10478608607337819
+   },
+   {
+    "valeur": "bois",
+    "part": 0.041564047226101304
+   },
+   {
+    "valeur": "gpl",
+    "part": 0.036841437095340865
+   },
+   {
+    "valeur": "fioul",
+    "part": 0.008759680081249206
+   },
+   {
+    "valeur": "reseau_chaleur",
+    "part": 0.0018281071473911388
+   },
+   {
+    "valeur": "autre",
+    "part": 0.0018027167703440396
+   }
+  ],
+  "isolation_toiture": [
+   {
+    "valeur": "0.0",
+    "part": 0.5416692599738595
+   },
+   {
+    "valeur": "1.0",
+    "part": 0.45833074002614055
+   }
+  ],
+  "type_installation_ecs": [
+   {
+    "valeur": "individuel",
+    "part": 0.9422742148875427
+   },
+   {
+    "valeur": "collectif",
+    "part": 0.052503307569110785
+   },
+   {
+    "valeur": "mixte (collectif-individuel)",
+    "part": 0.005222477543346564
+   }
+  ],
+  "inertie_lourde": [
+   {
+    "valeur": "0.0",
+    "part": 0.5178120706731845
+   },
+   {
+    "valeur": "1.0",
+    "part": 0.48218792932681553
+   }
+  ],
+  "protection_solaire_exterieure": [
+   {
+    "valeur": "1.0",
+    "part": 0.6620822702097205
+   },
+   {
+    "valeur": "0.0",
+    "part": 0.3379177297902794
+   }
+  ]
+ },
+ "reference": {
+  "annee_construction": 2000.0,
+  "surface_habitable_logement": 67.7,
+  "surface_chauffee_installation_chauffage_n1": 62.6,
+  "hauteur_sous_plafond": 2.5,
+  "volume_stockage_generateur_n1_ecs_n1": 150.0,
+  "nombre_appartement": 1.0,
+  "famille_ventilation": "fenetres",
+  "type_generateur_froid": "PAC air/air installée à partir de 2015",
+  "qualite_isolation_murs": "insuffisante",
+  "type_generateur_n1_ecs_n1": "Ballon électrique à accumulation vertical Catégorie B ou 2 étoiles",
+  "periode_construction": "1948-1974",
+  "type_emetteur_installation_chauffage_n1": "Soufflage d'air chaud (air soufflé) avec distribution par fluide frigorigène",
+  "type_generateur_n1_installation_n1": "PAC air/air installée à partir de 2015",
+  "qualite_isolation_enveloppe": "insuffisante",
+  "qualite_isolation_menuiseries": "moyenne",
+  "classe_altitude": "inférieur à 400m",
+  "qualite_isolation_plancher_bas": "très bonne",
+  "classe_inertie_batiment": "Moyenne",
+  "famille_energie_chauffage": "electricite",
+  "isolation_toiture": "0.0",
+  "type_installation_ecs": "individuel",
+  "inertie_lourde": "0.0",
+  "protection_solaire_exterieure": "1.0"
+ },
+ "erreurs": {
+  "mae": 26.702423999424177,
+  "p80": 41.78506615869286
+ },
+ "n_logements_entrainement": 39387
+}

@@ -7,7 +7,7 @@ ici et nulle part ailleurs.
 
 Ce que ce fichier décide :
   - ce qu'on télécharge (périmètre + colonnes) ;
-  - ce qu'on exclut d'office par raisonnement (fuites de données).
+  - ce qu'on exclut d'office par raisonnement (pour éviter lesfuites de données).
 
 Ce que ce fichier NE décide PAS :
   - la sélection finale des variables, le feature engineering et les
@@ -24,7 +24,7 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 # 1. Chemins du projet
 # ---------------------------------------------------------------------------
-RACINE = Path(__file__).resolve().parent.parent  # dossier m2_enedis/
+RACINE = Path(__file__).resolve().parent.parent  # dossier projet_ml_sise/
 DATA_BRUT = RACINE / "data" / "raw"              # extractions brutes de l'API
 DATA_TRAITE = RACINE / "data" / "processed"      # données nettoyées
 DATA_ECHANTILLON = RACINE / "data" / "sample"    # petit échantillon versionné
@@ -41,14 +41,15 @@ DATASETS = {
     "neuf": "dpe02neuf",          # DPE logements neufs (depuis juillet 2021)
 }
 
-TAILLE_PAGE = 1000            # lignes par requête (maximum autorisé à vérifier dans la doc)
+# Quelques reglages pour l'API : 
+TAILLE_PAGE = 1000            # lignes par requête ( vérifier dans la doc)
 DELAI_REQUETE_S = 60          # délai maximal d'attente d'une réponse
 PAUSE_ENTRE_REQUETES_S = 0.2  # pause polie entre deux pages
 NB_ESSAIS_MAX = 3             # nouvelles tentatives en cas d'erreur réseau
 
 # ---------------------------------------------------------------------------
 # 3. Périmètre des données
-#    Région Corse : la moins volumineuse, donc adaptée à l'espace disponible.
+#    Région Corse : la moins volumineuse, donc adaptée notre espace disponible.
 # ---------------------------------------------------------------------------
 REGION_NOM = "Corse"
 CODE_REGION = "94"  # code INSEE de la région ; à confirmer avec un values_agg sur code_region_ban
