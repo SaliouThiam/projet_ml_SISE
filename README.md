@@ -50,7 +50,7 @@ Référence naïve : F1 macro 0,08 et R² ≈ 0. Déduire l'étiquette de la con
 
 ![Architecture du projet](docs/architecture.svg)
 
-*Schéma modifiable : [`docs/architecture.drawio`](docs/architecture.drawio) (à ouvrir avec [diagrams.net](https://app.diagrams.net)).*
+*Schéma  : [`docs/architecture.drawio`](docs/architecture.drawio) (à ouvrir avec [diagrams.net](https://app.diagrams.net)).*
 
 - **Une seule source de vérité** : périmètre, colonnes, cibles et seuils se changent dans `src/utilis/config.py`.
 - **Transformations importables** : elles vivent dans `src/data/transformateurs.py`, car un pipeline sauvegardé avec joblib ne garde qu'une référence vers ses fonctions. Elles doivent donc être présentes dans l'image Docker.
