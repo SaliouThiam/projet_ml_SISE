@@ -19,7 +19,7 @@ Les modèles alimentent une **application web Dash** (« DPE Corse »), conteneu
 1. **Récupérer** les DPE de la région via l'API, sans nettoyage (`data/raw`).
 2. **Préparer** : écarter les valeurs impossibles, regrouper les libellés trop détaillés, sélectionner les variables, découper en train/test (80/20).
 3. **Éviter les fuites** : l'étiquette est calculée à partir de la consommation et des émissions de GES (la pire des deux classes). Ces valeurs ne servent jamais de variables explicatives, seulement de contrôle.
-4. **Modéliser** : un gradient boosting pour chaque tâche, comparé à une référence naïve et à une piste CatBoost.
+4. **Modéliser** : un gradient boosting pour chaque tâche
 5. **Servir** : un script extrait des fichiers légers pour l'application, qui charge les modèles et répond dans le navigateur.
 
 | Tâche | Modèle | Résultat sur le test |
@@ -42,6 +42,8 @@ Référence naïve : F1 macro 0,08 et R² ≈ 0. La météo (température, préc
 - **Application découplée** : elle ne lit jamais `train.csv` ni `test.csv`, seulement les deux fichiers légers de `app/data/`.
 
 ## 3. L'application
+
+*Mode d'emploi pour les utilisateurs : [`docs/DOCUMENTATION_FONCTIONNELLE.md`](docs/DOCUMENTATION_FONCTIONNELLE.md).*
 
 Quatre pages (`app/pages/`) : **Contexte**, **Exploration** (filtres par étiquette, énergie de chauffage, type de bâtiment, surface, département), **Carte** (consommation médiane et part de passoires F/G par commune) et **Prédiction**.
 
@@ -67,8 +69,9 @@ docker run --rm -p 8050:8050 dpe-corse          # http://localhost:8050
 projet_ml_sise/
 ├── app/           application Dash : app.py, pages/, graphiques.py, composants.py, donnees.py,
 │                  libelles.py, assets/ · data/ (logements_app.csv.gz, formulaire.json)
+├──docs/           documentations Documentation_fonctionnelle.md
 ├── notebooks/     01 exploration · 02 prétraitement · 03 classification · 04 régression
-│                  05 météo · 06 interprétation · audit_variables_yassine (CatBoost)
+│                  05 météo · 06 interprétation · 
 ├── scripts/       preparer_donnees_app.py
 ├── src/
 │   ├── data/      extraction · transformateurs · préparation et enrichissement météo
