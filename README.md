@@ -46,6 +46,10 @@ Référence naïve : F1 macro 0,08 et R² ≈ 0. Déduire l'étiquette de la con
 
 **NB** Pour la classification le model foret aléatoire est legèrement meilleur que le mais c'est trop lourd ducoup on a choisi Gradient boosting qui est plus leger pour le deploiement en mode gratuit (on utiise la version gratuit de render)
 
+### Pour en savoir sur le contexte et la méthodologie de la construction des modèles retenus. 
+ *consulter le rapport rapport sur les modèles ML : [`rapport_ml_DPE_Corse.md`](docs/rapport_ml_DPE_Corse.md).*
+
+
 ## 2. Architecture
 
 ![Architecture du projet](docs/architecture.svg)
