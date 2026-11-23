@@ -1,7 +1,7 @@
 # <center style="color: yellow;" > DPE Corse — prédire l'étiquette DPE d'un logement (projet_ml_sise) </center>
  
-### <center style="color: red;">Université Lumière Lyon</center>
-### <center style="color: red;">Master 2</center>
+### <center style="color: red;">Université Lumière Lyon 2</center>
+### <center style="color: red;">Master 2 SISE</center>
 *<center style="color: red;">Annnée : 2026-2027</center>*
 
 

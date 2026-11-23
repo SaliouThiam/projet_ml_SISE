@@ -71,7 +71,7 @@ Chaque commune est un marqueur sur une carte **OpenStreetMap**. Sa **taille** in
 2. Cliquer sur **Estimer**. Le bouton **Effacer** vide le formulaire.
 3. **Lire le résultat** à droite.
 
-<img src="Prediction_2.png" alt="Probabilités par étiquette et explication de l'estimation" width="760">
+<img src="prediction_2.png" alt="Probabilités par étiquette et explication de l'estimation" width="760">
 
 *Suite du résultat : probabilité de chaque étiquette et explication de l'estimation.*
 
