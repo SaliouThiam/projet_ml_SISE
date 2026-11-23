@@ -121,11 +121,9 @@ Le CSV des normales climatiques (`fr_climate_normals_1991_2020.csv`) se téléch
 
 ## 7. Limites connues
 
-- **Modèles absents du dépôt** : `.gitignore` exclut `*.joblib`, donc Render ne les recevra pas par un simple déploiement du dépôt. Ajouter une exception (`!src/models/*.joblib`) ou les forcer avec `git add -f`.
-- **Pas de `.dockerignore`** : `COPY src/` embarque `train.csv` et `test.csv` (≈ 35 Mo) dans l'image. Des `__pycache__` sont aussi encore suivis par Git.
+- **Modèles absents du dépôt** : 
 - **Classes F/G mal détectées** : rappel de 30 % avec CatBoost et biais de −135 kWh/m² sur la classe G.
 - **Décision météo ambiguë** : retenue en classification (gain de 0,009, du même ordre que l'écart-type entre plis), mais absente de la liste de variables des modèles.
-- **`config.py`** : `RACINE` pointe vers `src/` (d'où `src/data/` et `src/models/`), et le commentaire annonce un `preprocessing.py` et une API qui n'existent pas.
 
 ## 8. Sources
 
