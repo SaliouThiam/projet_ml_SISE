@@ -110,4 +110,10 @@ Les deux estimations sont **indépendantes** : l'étiquette prédite ne correspo
 
 ---
 
-**Sources et reproductibilité.** Dépôt du projet : [SaliouThiam/projet_ml_SISE](https://github.com/SaliouThiam/projet_ml_SISE). Notebooks : `02_preprocessing_selection.ipynb`, `03_modele_classification.ipynb`, `04_modele_regression.ipynb`, `05_enrichissement_meteo.ipynb` et `audit_variables_yassine.ipynb`. Métriques : `src/models/metriques_classification.json`, `src/models/metriques_regression.json`, `models/resultats_yassine_catboost.json`. Données : [ADEME](https://data.ademe.fr) ; climat : [normales climatiques 1991–2020 par commune](https://www.data.gouv.fr/datasets/normales-climatiques-mensuelles-1991-2020-par-commune-france). Application : [DPE Corse — Render](https://dpe-corse-latest.onrender.com/).
+**Sources et reproductibilité.** 
+- Dépôt du projet : [SaliouThiam/projet_ml_SISE](https://github.com/SaliouThiam/projet_ml_SISE).
+- Notebooks : `02_preprocessing_selection.ipynb`, `03_modele_classification.ipynb`, `04_modele_regression.ipynb`, `05_enrichissement_meteo.ipynb` et `audit_variables_yassine.ipynb`
+- Métriques : `src/models/metriques_classification.json`, `src/models/metriques_regression.json`, `models/resultats_yassine_catboost.json`. 
+- Données : [ADEME](https://data.ademe.fr) ; 
+- climat (enrechissement) : [normales climatiques 1991–2020 par commune](https://www.data.gouv.fr/datasets/normales-climatiques-mensuelles-1991-2020-par-commune-france). 
+- Application : [DPE Corse — Render](https://dpe-corse-latest.onrender.com/).
